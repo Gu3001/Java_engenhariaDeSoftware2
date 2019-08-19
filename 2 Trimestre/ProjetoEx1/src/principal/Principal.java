@@ -10,7 +10,7 @@ import models.Entrada;
 public class Principal {
 	
 	public static void main(String [] args) {
-		Verificar verificar = new Verificar();
+		Verificar verif = new Verificar();
 		Entrada in = new Entrada();
 		
 		System.out.println("Insira o número");
@@ -24,5 +24,6 @@ public class Principal {
 		
 		//Se numero for divisível por 3, imprimir FizzBuzz
 		System.out.println(in.getInput());
+		verif.verificar(in.getInput());
 	}
 }
